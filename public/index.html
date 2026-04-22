@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="status-bar">
+          <div>
+            <p class="eyebrow">Classic Mode</p>
+            <h1>Snake</h1>
+          </div>
+          <div class="scoreboard">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+        </div>
+
+        <p class="instructions">
+          Use arrow keys or WASD to move. Press space to pause, and restart anytime.
+        </p>
+
+        <div class="board-shell">
+          <div id="board" class="board" aria-label="Snake game board" role="grid"></div>
+          <div id="overlay" class="overlay" aria-live="polite"></div>
+        </div>
+
+        <div class="actions">
+          <button id="pause-button" type="button">Pause</button>
+          <button id="restart-button" type="button">Restart</button>
+        </div>
+
+        <div class="controls" aria-label="Touch controls">
+          <button type="button" data-direction="up">Up</button>
+          <div class="controls-row">
+            <button type="button" data-direction="left">Left</button>
+            <button type="button" data-direction="down">Down</button>
+            <button type="button" data-direction="right">Right</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.mjs"></script>
+  </body>
+</html>
