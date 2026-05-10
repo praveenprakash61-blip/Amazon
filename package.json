@@ -16,7 +16,7 @@
     "@azure/playwright": "^1.1.4",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.5.0",
-    "allure-playwright": "^3.7.1",
+    "allure-playwright": "^3.7.2",
     "i": "^0.3.7",
     "typescript": "^6.0.3"
   },
